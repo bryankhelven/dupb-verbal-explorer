@@ -1,0 +1,18 @@
+{
+  "resource_id": "DUPB_VERBAL_EXPLORER",
+  "source": "DUPB",
+  "total_lemmas": 6632,
+  "senses": 19989,
+  "predicator_senses": 19768,
+  "non_predicator_senses": 221,
+  "has_predicator_lemmas": 6628,
+  "n_only_lemmas": 4,
+  "functional_senses": 219,
+  "generated_text": false,
+  "paraphrased_text": false,
+  "source_family_units": 19987,
+  "cross_family_v_units_routed_in": 2,
+  "public_verbal_units": 19989,
+  "display_name": "DUPB Verbal Explorer",
+  "version": "1.0.0"
+}

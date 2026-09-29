@@ -1,0 +1,15 @@
+{
+  "resource": "DUPB Verbal Explorer",
+  "repository": "bryankhelven/dupb-verbal-explorer",
+  "pages": "https://bryankhelven.github.io/dupb-verbal-explorer/",
+  "release": "1",
+  "date": "2026-09-29",
+  "counts": {
+    "entries": 6632,
+    "senses": 19989,
+    "predicator_senses": 19768,
+    "non_predicator_senses": 221
+  },
+  "dataset_sha256": "df00f9783bb241cab14f07a80fb6e25482765fe7ebf8627b2af65d4970a4ca76",
+  "scientific_mutation": false
+}

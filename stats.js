@@ -1,0 +1,11 @@
+(()=>{
+const E=window.DUPB_ENTRIES||[],C=window.DUPB_COMMON,R=window.DUPB_RELEASE_INFO||{},CFG=window.DUPB_CONFIG||{};
+const senses=e=>e.entries.flatMap(x=>x.senses);
+function bars(el,rows){if(!rows.length)return;const max=Math.max(...rows.map(x=>x[1]),1);document.querySelector(el).innerHTML=rows.map(([l,n])=>`<div class="bar-row"><span>${C.esc(l)}</span><span class="bar"><i style="width:${100*n/max}%"></i></span><b>${C.format(n)}</b></div>`).join('')}
+document.querySelector('#headline').innerHTML=[[CFG.itemPlural,R.total_lemmas],['Acepções',R.senses],['Predicadoras',R.predicator_senses],['Não predicadoras',R.non_predicator_senses]].map(([l,n])=>`<div class="info-card"><b>${C.format(n)}</b><span>${l}</span></div>`).join('');
+const prof={allS:0,mixed:0,nonly:0};for(const e of E){const ss=senses(e),p=ss.filter(x=>x.predicator).length;if(!p)prof.nonly++;else if(p===ss.length)prof.allS++;else prof.mixed++}
+bars('#profileBars',[['Só predicadoras',prof.allS],['Mistas',prof.mixed],['Sem predicadoras',prof.nonly]]);
+const dist=new Map();for(const e of E)dist.set(senses(e).length,(dist.get(senses(e).length)||0)+1);const buckets=[[1,1],[2,2],[3,3],[4,5],[6,10],[11,20],[21,999]];bars('#senseBars',buckets.map(([a,b])=>[a===b?String(a):`${a}–${b===999?'mais':b}`,[...dist].filter(([k])=>k>=a&&k<=b).reduce((s,[,v])=>s+v,0)]));
+if(CFG.kind==='verb'){const tc=new Map(),sc=new Map();for(const e of E)for(const s of senses(e)){tc.set(s.verb_type,(tc.get(s.verb_type)||0)+1);sc.set(s.semantic_class,(sc.get(s.semantic_class)||0)+1)}bars('#specificBars',[...tc].sort((a,b)=>b[1]-a[1]));bars('#specificBars2',[...sc].sort((a,b)=>b[1]-a[1]))}else{const pc=new Map();for(const e of E)for(const s of senses(e))pc.set(s.pos_label,(pc.get(s.pos_label)||0)+1);bars('#specificBars',[...pc].sort((a,b)=>b[1]-a[1]));document.querySelector('#specificPanel2').hidden=true}
+const top=E.map(e=>[e.lemma,senses(e).length]).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'pt-BR')).slice(0,15);document.querySelector('#topNames').innerHTML=top.map(([l,n])=>`<div class="bar-row"><span>${C.esc(l)}</span><span></span><b>${n}</b></div>`).join('');
+})();
