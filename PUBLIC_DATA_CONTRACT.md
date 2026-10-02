@@ -72,3 +72,18 @@ Multi-Class:
 - `pos_counts`
 
 Eles não são necessários para o uso normal do recurso e não fazem parte do contrato público padrão.
+
+
+## Valência verbal
+
+A partir deste candidate, acepções verbais com `predicator: true` incluem:
+- `valency`: `V0`, `V1`, `V2` ou `V3`;
+- `nuclear_argument_count`: número inteiro de argumentos nucleares;
+- `argument_roles`: lista JSON ordenada de objetos `{"arg":"ARGn","role":"..."}`;
+- `valency_authority`: `ORCH_RECON_000248`.
+
+Para acepções com `predicator: false`, esses campos de valência não são materializados; `verb_function` preserva a função verbal certificada.
+
+`V0` implica `nuclear_argument_count = 0` e `argument_roles = []`. Os únicos V0 desta authority são `anoitecer.01` e `chover.03`.
+
+A ordem de `argument_roles` é nuclear e posicional: `ARG1`, `ARG2`, `ARG3`.

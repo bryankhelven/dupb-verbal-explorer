@@ -2,17 +2,34 @@
   "resource_id": "DUPB_VERBAL_EXPLORER",
   "source": "DUPB",
   "total_lemmas": 6632,
-  "senses": 19989,
-  "predicator_senses": 19768,
-  "non_predicator_senses": 221,
-  "has_predicator_lemmas": 6628,
-  "n_only_lemmas": 4,
-  "functional_senses": 219,
+  "senses": 19987,
+  "predicator_senses": 19758,
+  "non_predicator_senses": 229,
+  "has_predicator_lemmas": 6629,
+  "n_only_lemmas": 3,
+  "functional_senses": 229,
   "generated_text": false,
   "paraphrased_text": false,
   "source_family_units": 19987,
   "cross_family_v_units_routed_in": 2,
   "public_verbal_units": 19989,
   "display_name": "DUPB Verbal Explorer",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "mixed_profile_lemmas": 92,
+  "valency_distribution": {
+    "V2": 13472,
+    "V3": 951,
+    "V1": 5333,
+    "V0": 2
+  },
+  "verb_function_distribution": {
+    "SUPORTE": 101,
+    "AUXILIAR": 75,
+    "MODALIZADOR": 46,
+    "OTHER_EXPLICIT_FUNCTION": 7
+  },
+  "dataset_sha256": "9712d8b22e1f868da7f2a12330ff1d051552c3094fc0ef9283c7e5e273aee742",
+  "candidate_authority": "ORCH_RECON_000249",
+  "valency_authority": "ORCH_RECON_000248",
+  "deployment_authorized": false
 }
