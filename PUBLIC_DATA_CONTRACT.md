@@ -74,16 +74,33 @@ Multi-Class:
 Eles não são necessários para o uso normal do recurso e não fazem parte do contrato público padrão.
 
 
-## Valência verbal
+## Valência verbal — autoridade terminal ORCH_RECON_000312
 
-A partir deste candidate, acepções verbais com `predicator: true` incluem:
-- `valency`: `V0`, `V1`, `V2` ou `V3`;
-- `nuclear_argument_count`: número inteiro de argumentos nucleares;
-- `argument_roles`: lista JSON ordenada de objetos `{"arg":"ARGn","role":"..."}`;
-- `valency_authority`: `ORCH_RECON_000248`.
+As acepções verbais com `predicator: true` recebem projeção da autoridade científica terminal `ORCH_RECON_000312`, sem modificações de roleset, argumentos semânticos ou proveniência.
 
-Para acepções com `predicator: false`, esses campos de valência não são materializados; `verb_function` preserva a função verbal certificada.
+- `valency`: `V0` a `V6`, derivado de `nuclear_argument_count`;
+- `nuclear_argument_count`: inteiro entre 0 e 6, correspondente ao número de argumentos nucleares;
+- `argument_roles`: lista ordenada de participantes, com rótulos públicos densos `ARG0..ARGn-1`;
+- `argument_roles[].source_arg`: rótulo original da autoridade científica preservado para rastreabilidade;
+- `roleset_id`, `valency_authority` e `provenance`: identificador, autoridade e evidências pertinentes ao sentido;
+- `valency_authority`: `ORCH_RECON_000312`.
 
-`V0` implica `nuclear_argument_count = 0` e `argument_roles = []`. Os únicos V0 desta authority são `anoitecer.01` e `chover.03`.
+Para `predicator: false`, não produzir valência nem papéis fictícios; preservar a função verbal no campo correspondente. A contagem e a distribuição por valência devem ser derivadas do dataset e da metadata, e não de listas manuais fixas de sentidos.
 
-A ordem de `argument_roles` é nuclear e posicional: `ARG1`, `ARG2`, `ARG3`.
+### Distribuição certificada para este candidate
+
+| Valência | Acepções |
+|---|---:|
+| V0 | 1 |
+| V1 | 375 |
+| V2 | 5.508 |
+| V3 | 10.409 |
+| V4 | 2.505 |
+| V5 | 906 |
+| V6 | 54 |
+
+A normalização pública dos rótulos ARG não altera a estrutura semântica, a aridade, o frame ou a decisão científica e é auditável pelo `PUBLIC_ARG_LABEL_NORMALIZATION_LEDGER.tsv`.
+
+## Contrato de publicação e autorização
+
+Projeção científica terminal: `ORCH_RECON_000312` — 19.758/19.758 predicadores resolvidos, zero bloqueios. O filtro dinâmico **Valência** permite V0–V6. `PUBLIC_UI_DEPLOYMENT_AUTHORIZED = NO` até ACK explícito do Orquestrador. A publicação não está automaticamente autorizada por QA pré-deploy.
