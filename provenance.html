@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Provenance · DUPB Verbal Explorer</title><meta name="description" content="Origem e rastreabilidade das análises de valência verbal por acepção.">
+<script src="theme.js"></script><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="resource.css"><link rel="stylesheet" href="provenance.css"></head>
+<body><header class="topbar"><div class="brand"><a href="index.html">DUPB Verbal Explorer</a><span>Verbos e predicação por acepção</span></div><div class="header-right"><div class="resource-switch" aria-label="Recursos DUPB"></div><div class="top-actions"><a class="nav-btn" href="index.html">Consulta</a><a class="nav-btn" href="about.html">Sobre</a><a class="nav-btn" href="stats.html">Estatísticas</a><a class="nav-btn" href="download.html">Dados e citação</a><a class="nav-btn" aria-current="page" href="provenance.html">Provenance</a><button class="theme-btn icon-btn" data-theme-toggle type="button"></button></div></div></header>
+<main class="page provenance-page"><p class="eyebrow">Documentação científica</p><h1>Provenance</h1>
+<p class="lead">De onde vieram os frames verbais, como as acepções foram relacionadas às fontes e quais informações de origem estão documentadas.</p>
+<div id="provenanceStats" class="info-grid"></div>
+<section class="provenance-explainer"><h2>Como ler esta página</h2>
+<p>Cada resultado representa uma acepção predicadora do DUPB. A <strong>fonte</strong> identifica o recurso indicado no dataset público; a <strong>relação</strong> representa a classificação de origem documentada, quando disponível. Essas informações não constituem, por si sós, o histórico completo da adjudicação científica.</p>
+<p>A origem e o tipo de correspondência são apresentados com a informação documental disponível. As descrições individuais não substituem um estudo completo das decisões de análise. Lacunas documentais são sinalizadas, sem criação de justificativas.</p>
+</section>
+<section class="provenance-find"><h2>Pesquisar proveniência</h2><div class="provenance-controls">
+<div class="prov-field prov-wide"><label for="provQuery">Busca por lema, acepção, papel ou frame de referência</label><input id="provQuery" type="search" placeholder="Ex.: abalroar, condicionar, collide.01"></div>
+<div class="prov-field"><label for="provSource">Fonte declarada</label><select id="provSource"><option value="all">Todas</option></select></div>
+<div class="prov-field"><label for="provRelation">Relação / classe de origem</label><select id="provRelation"><option value="all">Todas</option></select></div>
+<div class="prov-field"><label for="provValency">Valência</label><select id="provValency"><option value="all">Todas</option><option>V0</option><option>V1</option><option>V2</option><option>V3</option><option>V4</option><option>V5</option><option>V6</option></select></div>
+<div class="prov-field"><label for="provState">Completude da origem</label><select id="provState"><option value="all">Todos</option><option value="complete">Fonte e relação declaradas</option><option value="missing-source">Sem fonte declarada</option><option value="missing-relation">Sem classe de origem</option></select></div></div>
+<div class="prov-count" id="provCount" role="status" aria-live="polite"></div><div id="provResults" class="provenance-results"></div><button type="button" id="provMore" class="btn" hidden>Mostrar mais resultados</button></section>
+</main><footer>DUPB Verbal Explorer · Provenance · Release 1</footer>
+<script src="config.js"></script><script src="resource-nav.js"></script><script src="data/release-info.js"></script><script src="data/provenance-public.js"></script><script src="common.js"></script><script src="provenance.js"></script></body></html>

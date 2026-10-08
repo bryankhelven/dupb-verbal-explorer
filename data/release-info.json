@@ -1,22 +1,18 @@
 {
-  "label": "Release 1 · candidato corretivo ORCH312",
-  "date": "7 out. 2026",
-  "total_lemmas": 6632,
-  "senses": 19987,
-  "predicator_senses": 19758,
-  "non_predicator_senses": 229,
-  "dataset_sha256": "dd8d2f070cfff94451ec12fa7c84d4148df66607b08ba02316275384eb132665",
   "author": "Bryan Khelven",
   "email": "bryankhelven@ieee.org",
   "resource_id": "DUPB_VERBAL_EXPLORER",
   "source": "DUPB",
+  "total_lemmas": 6632,
+  "senses": 19987,
+  "predicator_senses": 19758,
+  "non_predicator_senses": 229,
   "has_predicator_lemmas": 6629,
   "n_only_lemmas": 3,
   "functional_senses": 229,
   "generated_text": false,
   "paraphrased_text": false,
   "release": "1",
-  "version": "1.1.0-corrective-predeploy",
   "mixed_profile_lemmas": 92,
   "valency_distribution": {
     "V0": 1,
@@ -33,8 +29,8 @@
     "MODALIZADOR": 46,
     "OTHER_EXPLICIT_FUNCTION": 7
   },
-  "candidate_authority": "ORCH_RECON_000312",
-  "science_authority": "ORCH_RECON_000312",
-  "base_repository_head": "00fd3e19146761457437f11987aedcdf1a4632fc",
-  "deployment_authorized": false
+  "label": "Release 1 · Consulta de valência verbal",
+  "date": "8 out. 2026",
+  "version": "1.1.1",
+  "dataset_sha256": "41ef1d01a6c30063de4d23456db56b9d5630dff870796904267d1dc80266d0ba"
 }

@@ -3,17 +3,13 @@
   "repository": "bryankhelven/dupb-verbal-explorer",
   "pages": "https://bryankhelven.github.io/dupb-verbal-explorer/",
   "release": "1",
-  "candidate_version": "1.1.0-corrective-predeploy",
-  "date": "2026-10-07",
+  "version": "1.1.1",
+  "date": "2026-10-08",
   "counts": {
     "total_lemmas": 6632,
     "senses": 19987,
     "predicator_senses": 19758,
     "non_predicator_senses": 229,
-    "has_predicator_lemmas": 6629,
-    "n_only_lemmas": 3,
-    "mixed_profile_lemmas": 92,
-    "functional_senses": 229,
     "valency_distribution": {
       "V0": 1,
       "V1": 375,
@@ -22,30 +18,8 @@
       "V4": 2505,
       "V5": 906,
       "V6": 54
-    },
-    "verb_function_distribution": {
-      "SUPORTE": 101,
-      "AUXILIAR": 75,
-      "MODALIZADOR": 46,
-      "OTHER_EXPLICIT_FUNCTION": 7
     }
   },
-  "dataset_sha256": "dd8d2f070cfff94451ec12fa7c84d4148df66607b08ba02316275384eb132665",
-  "scientific_mutation": false,
-  "corrective_projection": true,
-  "public_arg_label_normalization": true,
-  "candidate": true,
-  "deployment_authorized": false,
-  "base_head": "00fd3e19146761457437f11987aedcdf1a4632fc",
-  "global_authority": "ORCH_RECON_000312",
-  "science_authority": "ORCH_RECON_000312",
-  "population_authority": "ORCH_RECON_000243",
-  "methodology_base": [
-    "ORCH_RECON_000256",
-    "ORCH_RECON_000258"
-  ],
-  "topology_crosswalk_rows": 19987,
-  "predicator_science_join_rows": 19758,
-  "nonpredicator_rows": 229,
-  "other_pos_excluded": 2
+  "dataset_sha256": "41ef1d01a6c30063de4d23456db56b9d5630dff870796904267d1dc80266d0ba",
+  "public_contract": "lexical data and provenance documentation stored separately"
 }

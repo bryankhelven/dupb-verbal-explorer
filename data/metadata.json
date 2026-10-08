@@ -8,13 +8,10 @@
   "has_predicator_lemmas": 6629,
   "n_only_lemmas": 3,
   "functional_senses": 229,
-  "generated_text": false,
-  "paraphrased_text": false,
   "source_family_units": 19987,
   "cross_family_v_units_routed_in": 2,
   "public_verbal_units": 19989,
   "display_name": "DUPB Verbal Explorer",
-  "version": "1.1.0-corrective-predeploy",
   "mixed_profile_lemmas": 92,
   "valency_distribution": {
     "V0": 1,
@@ -31,14 +28,8 @@
     "MODALIZADOR": 46,
     "OTHER_EXPLICIT_FUNCTION": 7
   },
-  "dataset_sha256": "dd8d2f070cfff94451ec12fa7c84d4148df66607b08ba02316275384eb132665",
-  "candidate_authority": "ORCH_RECON_000312",
-  "science_authority": "ORCH_RECON_000312",
-  "population_authority": "ORCH_RECON_000243",
-  "methodology_base": [
-    "ORCH_RECON_000256",
-    "ORCH_RECON_000258"
-  ],
-  "base_repository_head": "00fd3e19146761457437f11987aedcdf1a4632fc",
-  "deployment_authorized": false
+  "generated_text": false,
+  "paraphrased_text": false,
+  "version": "1.1.1",
+  "dataset_sha256": "41ef1d01a6c30063de4d23456db56b9d5630dff870796904267d1dc80266d0ba"
 }

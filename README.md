@@ -1,21 +1,13 @@
 # DUPB Verbal Explorer
 
-Interface web para consulta ao **Dicionário de usos do português do Brasil** (Francisco S. Borba, Ática, 2002).
+Consulta pública às acepções verbais do *Dicionário de usos do português do Brasil* (Francisco S. Borba, Ática, 2002).
 
-## Release 1
+- Lemas: **6,632**
+- Acepções: **19,987**
+- Predicadoras: **19,758**
+- Não predicadoras: **229**
+- Valências: **V0–V6**
 
-- Entradas de consulta: **6.632**
-- Acepções: **19.989**
-- Predicadoras: **19.768**
-- Não predicadoras: **221**
+A **Consulta** apresenta apenas informação lexicográfica. A página **Provenance**, acessível na navegação geral, documenta fontes e relações de origem em conjunto independente de dados. O dataset distribuído contém apenas campos públicos.
 
-## Família DUPB Explorers
-
-- Nomes: https://bryankhelven.github.io/dupb-nominal-explorer/
-- Verbos: https://bryankhelven.github.io/dupb-verbal-explorer/
-- Multiclasses: https://bryankhelven.github.io/dupb-multiclass-explorer/
-
-## Autoria
-
-Bryan Khelven  
-bryankhelven@ieee.org
+Autoria: Bryan Khelven · bryankhelven@ieee.org
